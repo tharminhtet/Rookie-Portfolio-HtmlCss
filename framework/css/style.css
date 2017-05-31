@@ -37,3 +37,7 @@ body {
 .apps{
   padding-top: 20px;
 }
+
+.modal-body{
+  text-align: center;
+}

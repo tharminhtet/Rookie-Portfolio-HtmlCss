@@ -6,6 +6,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
 		<title>HTML CSS Portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -36,21 +38,73 @@
 
 			<div class="row text-center apps">
 				<div class="col-md-4">
-					<img src="https://lh3.googleusercontent.com/q8BexKVNeTYAvZlARRfpCHPDlQpYIy3uqVBLgc7trfv8R3uxY8TIdp-jCWOEFkzgwbcn=w300" alt="miwok img">
+					<img src="https://lh3.googleusercontent.com/q8BexKVNeTYAvZlARRfpCHPDlQpYIy3uqVBLgc7trfv8R3uxY8TIdp-jCWOEFkzgwbcn=w300" alt="miwok img" data-toggle="modal" data-target="#miwok">
 					<h3>MIWOK</h3>
 					<p><a href="http://github.com">Link to project</a></p>
 				</div>
 				<div class="col-md-4">
-					<img src="https://lh3.googleusercontent.com/9_Dq-8GrQm-rBSLjSxmPQZSN-xSEGeCbaos1isHwkcY8Wtk--s1nvUghQGYo1Gr3gLg=w300" alt="quake report img">
+					<img src="https://lh3.googleusercontent.com/9_Dq-8GrQm-rBSLjSxmPQZSN-xSEGeCbaos1isHwkcY8Wtk--s1nvUghQGYo1Gr3gLg=w300" alt="quake report img" data-toggle="modal" data-target="#quake-report">
 					<h3>QUAKE REPORT</h3>
 					<p><a href="http://github.com">Link to project</a></p>
 				</div>
 				<div class="col-md-4">
-					<img src="https://d125fmws0bore1.cloudfront.net/assets/pages/pawdacity/i5-3cb27781c5c33b309ad801ebf8294ff2de3ace3f1fb9f8396f820bd9465d608e.jpg" alt="pets app img" height="300" width="300">
+					<img src="https://d125fmws0bore1.cloudfront.net/assets/pages/pawdacity/i5-3cb27781c5c33b309ad801ebf8294ff2de3ace3f1fb9f8396f820bd9465d608e.jpg" alt="pets app img" height="300" width="300" data-toggle="modal" data-target="#pets-app">
 					<h3>PETS APP</h3>
 					<p><a href="http://github.com">Link to project</a></p>
 				</div>
 			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="miwok" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+						<div class="modal-content">
+								<div class="modal-header">
+										<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+								</div>
+								<div class="modal-body">
+										<img class="img-responsive center-block" src="https://lh3.googleusercontent.com/q8BexKVNeTYAvZlARRfpCHPDlQpYIy3uqVBLgc7trfv8R3uxY8TIdp-jCWOEFkzgwbcn=w300">
+										This is an Android Language Learning App.
+								</div>
+								<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<div class="modal fade" id="quake-report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+						<div class="modal-content">
+								<div class="modal-header">
+										<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+								</div>
+								<div class="modal-body">
+										<img class="img-responsive center-block" src="https://lh3.googleusercontent.com/9_Dq-8GrQm-rBSLjSxmPQZSN-xSEGeCbaos1isHwkcY8Wtk--s1nvUghQGYo1Gr3gLg=w300">
+										This app shows earth quake data.
+								</div>
+								<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<div class="modal fade" id="pets-app" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+						<div class="modal-content">
+								<div class="modal-header">
+										<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+								</div>
+								<div class="modal-body">
+										<img class="img-responsive center-block" src="https://d125fmws0bore1.cloudfront.net/assets/pages/pawdacity/i5-3cb27781c5c33b309ad801ebf8294ff2de3ace3f1fb9f8396f820bd9465d608e.jpg">
+										Collects and presents pets data from the pets pound.
+								</div>
+								<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+						</div>
+				</div>
 		</div>
 	</body>
 </html>
